@@ -19,3 +19,19 @@ export const banner = {
   buttonLink: "/products",
   image: bannerImageOne,
 };
+
+export const accounters = [
+  { title: "MyAccount", href: "/myaccount" },
+  { title: "Orders", href: "/orders" },
+  { title: "Register", href: "/register" },
+  { title: "Wishlist", href: "/wishlist" },
+  { title: "Return", href: "/return" },
+];
+
+export const information =[
+  {title:"Our Story", href:"/ourstory"},
+  {title:"Career", href:"/careen"},
+  {title:"Privacy Policy", href:"/privacypolicy"},
+  {title:"Term-Condition", href:"/termcondition"},
+  {title:"Blog",href:"/blog"},
+]

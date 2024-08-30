@@ -7,7 +7,7 @@ import { LiaUser } from "react-icons/lia";
 import { MdFavoriteBorder } from "react-icons/md";
 import { BiShoppingBag } from "react-icons/bi";
 import Link from "next/link";
-import { logo } from "@/assets";
+import { shop } from "@/assets";
 import { RiMenu3Fill } from "react-icons/ri";
 import { signIn, useSession } from "next-auth/react";
 import { useDispatch, useSelector } from "react-redux";
@@ -33,7 +33,7 @@ const MiddleHeader = () => {
     <div className="border-b-[1px] border-b-gray-400">
       <Container className="py-5 flex items-center gap-4 md:gap-6 lg:gap-20 justify-between ">
         <Link href={"/"}>
-          <Image src={logo} alt="logo" className="w-28" />
+          <Image src={shop} alt="logo" className="w-32 h-full md:w-44 " />
         </Link>
         <div className="hidden md:inline-flex flex-1 h-10 relative">
           <input

@@ -4,8 +4,7 @@ import { getData } from "./helpers";
 import BannerSub from "@/components/pages/home/BannerSub";
 import BannerBot from "@/components/pages/home/BannerBot";
 import BannerMiddle from "@/components/pages/home/BannerMiddle";
-
-
+import Carosel from "@/components/Carosel";
 
 export default async function Home() {
   const product = await getData("https://dummyjson.com/products");
@@ -17,6 +16,7 @@ export default async function Home() {
       <BannerMiddle />
       <BannerBot />
       <BannerSub />
+      <Carosel />
     </main>
   );
 }

@@ -6,7 +6,7 @@ const CartPage = () => {
   return (
     <Container className="py-10 flex items-start justify-between gap-x-20">
       <CartProducts />
-      <div>Checkout Details</div>
+   
     </Container>
   );
 };

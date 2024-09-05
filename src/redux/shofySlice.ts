@@ -42,7 +42,9 @@ export const shofySlice = createSlice({
         existingProduct.quantity! -= 1;
       }
     },
-    deleteProduct: (state, action) => {},
+    removeFromCart: (state, action) => {
+      state.cart=state.cart.filter((item)=>item?.id !== action.payload);
+    },
     addUser: (state, action) => {
       state.userInfo = action.payload;
     },
@@ -57,6 +59,6 @@ export const {
   removeUser,
   increaseQuantity,
   decreaseQuantity,
-  deleteProduct,
+  removeFromCart,
 } = shofySlice.actions;
 export default shofySlice.reducer;

@@ -10,12 +10,14 @@ import { ProductType, StateType } from "../../type";
 import { toast } from "react-hot-toast";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface PropsType {
   product?: ProductType;
+  className?: string;
 }
 
-const AddToCartButton = ({ product }: PropsType) => {
+const AddToCartButton = ({ product, className }: PropsType) => {
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     if (product) {
@@ -54,8 +56,7 @@ const AddToCartButton = ({ product }: PropsType) => {
     <>
       {existingProduct ? (
         <div
-          className="flex item-center justify-between
-      h-10 rounded-md text-black"
+          className={twMerge("flex item-center justify-between h-10 rounded-md text-black",className)}
         >
           <button
             onClick={handleMinus}
